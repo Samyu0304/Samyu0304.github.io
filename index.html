@@ -46,4 +46,82 @@
   //-->
 
 </head>
+
+<body class="w3-content" style="max-width:1000px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h3><b>YUNHE</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#news" class="w3-bar-item w3-button">News</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#talks" class="w3-bar-item w3-button">Talks</a>
+    <a href="#publications" class="w3-bar-item w3-button">Research</a>
+    <a href="#service" class="w3-bar-item w3-button">Services</a>
+    <a href="#award" class="w3-bar-item w3-button">Awards</a>
+  </div>
+</nav>
+  
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">YUNHE</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+    <div class="w3-container w3-center w3-padding-32" id="home">
+      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/Yunhe_new.jpg">
+      <h1>Yunhe Wang</h1>
+        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+          I am a senior researcher at <a href="https://www.noahlab.com.hk/">Huawei Noah's Ark Lab</a>, Beijing, where I work on deep learning, model compression, and computer vision, etc. Before that, I did my PhD at school of EECS, <a href="https://www.pku.edu.cn/">Peking University</a>, where I was co-advised by Prof. <a href="https://dblp.org/pers/hd/x/Xu_0006:Chao">Chao Xu</a></a> and Prof. <a href="https://scholar.google.com.sg/citations?user=RwlJNLcAAAAJ">Dacheng Tao</a></a>. I did my bachelors at school of science, <a href="https://en.xidian.edu.cn/">Xidian University</a>.
+        </p>
+        <p class="w3-center">
+          <a href="mailto:yunhe.wang@huawei.com">Email</a> &nbsp/&nbsp
+          <a href="https://scholar.google.com/citations?user=isizOkYAAAAJ">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://www.zhihu.com/people/YunheWang"> Zhi Hu </a> &nbsp/&nbsp
+          <a href="https://dblp.org/pid/63/8217-1.html"> DBLP </a>
+        </p>
+        </tbody></table>
+  </div>
+  
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</body>
 </html>

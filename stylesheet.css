@@ -70,7 +70,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #FDB515;
   text-decoration: none;
 }
 
@@ -81,33 +81,53 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 16px
+}
+
+i {
+  font-size: 24px
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+highlight {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #db1f48;
 }
 
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .one {
   width: 160px;
   height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
 }
 
 .fade {
@@ -120,39 +140,10 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-body { 
-margin: 0;
-padding: 0; 
-background: #ffffff;
-}
-
-.navbar {
-  height: 40px;
-  line-height: 40px;
-  background: #003264;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  display: inline;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-weight: 700
-}
-
-.main {
-  padding: 16px;
-  margin-top: 0px;
-}
-
-a.anchor {
-    position: relative;
-    top: -50px;
-    visibility: hidden;
+.image-cropper {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
